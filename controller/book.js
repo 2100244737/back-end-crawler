@@ -62,6 +62,32 @@ async function getBook (req, res, next) {
         next(e)
     }
 }
+// 获得一本书
+async function getBookId (req, res, next) {
+    try {
+        const {id} = req.params
+        const data = await bookModel.findById(id)
+        res.json({
+            code: 200,
+            data
+        })
+    }catch (e) {
+        next(e)
+    }
+}
+async function getAllBook (req, res, next ) {
+    try{
+        const data = await bookModel.find()
+        res.json({
+            code: 200,
+            data
+        })
+    } catch (e) {
+        next(e)
+    }
+}
 module.exports = {
-    getBook
+    getBook,
+    getBookId,
+    getAllBook
 }
