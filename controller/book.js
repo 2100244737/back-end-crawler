@@ -21,7 +21,8 @@ async function getBook (req, res, next) {
         const book = await bookModel.create({
             title,
             img,
-            author
+            author,
+            desc
         })
         let baseUrl
         let titlesArrUrl = []
