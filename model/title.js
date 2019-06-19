@@ -1,4 +1,4 @@
-// 目录集合
+// 目录集合模块
 const mongoose = require('mongoose');
 const title = mongoose.Schema({
   bookId: {

@@ -1,5 +1,6 @@
-// 文章集合
+// 文章集合模块
 const mongoose = require('mongoose');
+const a = '123'
 const article = mongoose.Schema({
     bookId: {
         type: mongoose.SchemaTypes.ObjectId,
