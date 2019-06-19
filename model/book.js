@@ -1,4 +1,4 @@
-// 书籍集合
+// 书籍集合模块
 const mongoose = require('mongoose');
 const book = new mongoose.Schema({
     title: String,
