@@ -17,5 +17,5 @@ const book = new mongoose.Schema({
         type: Number,
         default: 1
     }
-},{versionKey: false, timestamp: {createdAt:'createTime', updatedAt: 'updateTime'}})
+},{versionKey: false, timestamps: {createdAt:'createTime', updatedAt: 'updateTime'}})
 module.exports = mongoose.model('book', book)
