@@ -11,5 +11,5 @@ const user = mongoose.Schema({
         unique: true
     },
     password: String
-},{versionKey: false, timestamp: {createdAt:'createTime', updatedAt: 'updateTime'}})
+},{versionKey: false, timestamps: {createdAt:'createTime', updatedAt: 'updateTime'}})
 module.exports = mongoose.model('user', user)

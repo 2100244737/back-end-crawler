@@ -10,5 +10,5 @@ const title = mongoose.Schema({
   },
   title: String,
   total: Number
-}, {versionKey: false, timestamp: {createdAt:'createTime', updatedAt: 'updateTime'}})
+}, {versionKey: false, timestamps: {createdAt:'createTime', updatedAt: 'updateTime'}})
 module.exports = mongoose.model('title', title)
